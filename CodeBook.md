@@ -33,4 +33,17 @@ Download, unzip and extract the dataset under the folder "UCI HAR Dataset."
 * replace the "activity" column of extractData by the corresponding activity labels, which can be found in activities variable.
 
 ### 6.Appropriately labels the data set with descriptive variable names
-*
+* substitute character **t** at the start of the column's names with "time"
+* substitute character **f** at the start of the column's names with "frequency"
+* substitute **Acc** in column's names with "Accelerometer"
+* substitute **Gyro** in column's name with "Gyroscope"
+* substitute **Mag** in column's name with "Magnitude"
+* substitute **BodyBody** in column's name with "Body"
+* substitute **angle** in column's name with "Angle"
+* substitute **gravity** in column's name with "Gravity"
+* substitute **-mean()** in column's name with "Mean"
+* substitute **-std()** in column's name with "STD"
+* substitute **-freq()** in column's name with "Frequency"
+
+### 7. Create a second, independent tidy data set with the average of each variable for each activity and each subject
+* **newData** - with 180 rows and 88 columns is created by grouping through subject and activity, and summarising the extractData taking the means of each variable for each activity and each subject.
