@@ -47,3 +47,4 @@ Download, unzip and extract the dataset under the folder "UCI HAR Dataset."
 
 ### 7. Create a second, independent tidy data set with the average of each variable for each activity and each subject
 * **newData** - with 180 rows and 88 columns is created by grouping through subject and activity, and summarising the extractData taking the means of each variable for each activity and each subject.
+* Export newData into "tidyDataset.txt."
